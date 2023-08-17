@@ -17,5 +17,5 @@ jobs:
           accessKeySecret: ${{secrets.ACCESS_KEY_SECRET}}
           bucket: myblogclm
           endpoint: oss-cn-beijing.aliyuncs.com
-          folder: ./public
+          folder: public
           indexPage: index.html
