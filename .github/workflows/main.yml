@@ -8,14 +8,27 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # steps:
+    #   # 生成静态文件
+    #   - name: upload files to OSS
+    #     uses: fangbinwei/aliyun-oss-website-action@v1
+    #     with:
+    #       accessKeyId: ${{secrets.ACCESS_KEY_ID}}
+    #       accessKeySecret: ${{secrets.ACCESS_KEY_SECRET}}
+    #       bucket: myblogclm
+    #       endpoint: oss-cn-beijing.aliyuncs.com
+    #       folder: public
+    #       indexPage: index.html
     steps:
-      # 生成静态文件
-      - name: upload files to OSS
-        uses: fangbinwei/aliyun-oss-website-action@v1
+      - uses: actions/checkout@master
+      - uses: tiyee/aliyun-oss-auto-upload@v2.0.0
         with:
-          accessKeyId: ${{secrets.ACCESS_KEY_ID}}
-          accessKeySecret: ${{secrets.ACCESS_KEY_SECRET}}
-          bucket: myblogclm
-          endpoint: oss-cn-beijing.aliyuncs.com
-          folder: public
-          indexPage: index.html
+            # aliyun config
+            region: oss-cn-beijing
+            access-key-id: ${{secrets.ACCESS_KEY_ID}}
+            access-key-secret: ${{secrets.ACCESS_KEY_SECRET}}
+            bucket: myblogclm
+            secure: true
+            # deploy config
+            local-folder: public # local folder
+            remote-dir: /
