@@ -8,15 +8,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       # 生成静态文件
       - name: upload files to OSS
         uses: fangbinwei/aliyun-oss-website-action@v1
         with:
-          accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
-          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
-          bucket: 'myblogclm' #修改成你自己的bucket
-          endpoint: 'oss-cn-beijing.aliyuncs.com'
-          folder: 'public'
+          accessKeyId: ${{secrets.ACCESS_KEY_ID}}
+          accessKeySecret: ${{secrets.ACCESS_KEY_SECRET}}
+          bucket: myblogclm
+          endpoint: oss-cn-beijing.aliyuncs.com
+          folder: ./public
           indexPage: index.html
