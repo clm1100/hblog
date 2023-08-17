@@ -1,0 +1,152 @@
+{
+  "main": {
+    "id": "4da176d934e56101",
+    "type": "split",
+    "children": [
+      {
+        "id": "5021ca3b1071041f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68ce268bc97ce1b4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bb48e6d7c852037f",
+    "type": "split",
+    "children": [
+      {
+        "id": "40d79d0163a1877e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1800c799e2d194a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d23fb4ca74f5e8fb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3dd9385908deaea6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "85669840acd827cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4ff9fd0a07b040e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62453a98e763bbc0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e458dea474d5b4a2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "514d09aa69a17bc4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1cf1e2d147bf15f9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
+    }
+  },
+  "active": "68ce268bc97ce1b4",
+  "lastOpenFiles": [
+    "2023-08-17.md",
+    "未命名.canvas",
+    "未命名.md",
+    "Pasted image 20230816112449.png",
+    "来回翻越了十几次喜马拉雅，我终于整明白了麦线.md"
+  ]
+}
