@@ -10,22 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-          cache: 'npm'
-
-      # 配置Hexo环境
-      - name: Setup Hexo
-        run: |
-          npm install hexo-cli -g
-          npm install
-      # 生成静态文件 hexo clean 
-      - name: Build
-        run: |
-          hexo g
-    
       # 生成静态文件
       - name: upload files to OSS
         uses: fangbinwei/aliyun-oss-website-action@v1
@@ -35,3 +19,4 @@ jobs:
           bucket: 'myblogclm' #修改成你自己的bucket
           endpoint: 'oss-cn-beijing.aliyuncs.com'
           folder: 'public'
+          indexPage: index.html
