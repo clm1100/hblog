@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '12'
+          node-version: '14'
           cache: 'npm'
 
       # 配置Hexo环境
@@ -32,6 +32,6 @@ jobs:
         with:
           accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
           accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
-          bucket: 'szltblog' #修改成你自己的bucket
-          endpoint: 'oss-cn-shanghai.aliyuncs.com'
+          bucket: 'myblogclm' #修改成你自己的bucket
+          endpoint: 'oss-cn-beijing.aliyuncs.com'
           folder: 'public'
